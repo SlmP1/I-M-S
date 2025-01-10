@@ -1,0 +1,27 @@
+﻿@model IMS.Models.Inventory
+
+@{
+    ViewData["Title"] = "Delete Inventory Item";
+}
+
+<div class="container mt-4">
+    <h2>Delete Inventory Item</h2>
+    <div class="alert alert-danger">
+        Are you sure you want to delete the following inventory item?
+    </div>
+    <dl class="row">
+        <dt class="col-sm-3">Id</dt>
+        <dd class="col-sm-9">@Model.Id</dd>
+
+        <dt class="col-sm-3">Quantity</dt>
+        <dd class="col-sm-9">@Model.Quantity</dd>
+
+        <dt class="col-sm-3">Location</dt>
+        <dd class="col-sm-9">@Model.Location</dd>
+    </dl>
+    <form asp-action="DeleteConfirmed" method="post">
+        <input type="hidden" asp-for="Id" />
+        <button type="submit" class="btn btn-danger">Delete</button>
+        <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+    </form>
+</div>

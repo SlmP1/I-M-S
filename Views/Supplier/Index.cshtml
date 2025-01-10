@@ -1,0 +1,35 @@
+﻿@model IEnumerable<IMS.Models.Supplier>
+
+@{
+    ViewData["Title"] = "Supplier Index";
+}
+
+<h1>Supplier Index</h1>
+
+<table class="table table-dark">
+    <thead>
+        <tr>
+            <th scope="col">#</th> <!-- Serial number column -->
+            <th scope="col">Supplier Name</th>
+            <th scope="col">Contact Info</th>
+            <th scope="col">Address</th>
+            <th scope="col">Actions</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var item in Model.Select((value, index) => new { value, index }))
+        {
+            <tr>
+                <td>@(item.index + 1)</td> <!-- Serial number for each row -->
+                <td>@item.value.SupplierName</td>
+                <td>@item.value.ContactInfo</td>
+                <td>@item.value.Address</td>
+                <td>
+                    <a asp-action="Details" asp-route-id="@item.value.SupplierId" class="btn btn-info">Details</a>
+                    <a asp-action="Update" asp-route-id="@item.value.SupplierId" class="btn btn-warning">Update</a>
+                    <a asp-action="Delete" asp-route-id="@item.value.SupplierId" class="btn btn-danger">Delete</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>
