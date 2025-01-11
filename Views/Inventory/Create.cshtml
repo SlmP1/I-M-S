@@ -1,35 +1,29 @@
-﻿@model IEnumerable<IMS.Models.Inventory>
+﻿@model IMS.Models.Inventory
 
 @{
-    ViewData["Title"] = "Inventory";
+    ViewData["Title"] = "Create Inventory Item";
 }
 
-<div class="container mt-4">
-    <h2>Inventory List</h2>
-    <a href="@Url.Action("Create", "Inventory")" class="btn btn-success mb-3">Add New Inventory Item</a>
-    <table class="table table-dark table-striped">
-        <thead>
-            <tr>
-                <th>#</th>
-                <th>Quantity</th>
-                <th>Location</th>
-                <th>Actions</th>
-            </tr>
-        </thead>
-        <tbody>
-            @foreach (var inventory in Model)
-            {
-                <tr>
-                    <td>@inventory.Id</td>
-                    <td>@inventory.Quantity</td>
-                    <td>@inventory.Location</td>
-                    <td>
-                        <a href="@Url.Action("Update", "Inventory", new { id = inventory.Id })" class="btn btn-warning">Update</a>
-                        <a href="@Url.Action("Delete", "Inventory", new { id = inventory.Id })" class="btn btn-danger">Delete</a>
-                        <a href="@Url.Action("Details", "Inventory", new { id = inventory.Id })" class="btn btn-info">Details</a>
-                    </td>
-                </tr>
-            }
-        </tbody>
-    </table>
-</div>
+<h1>Create Inventory Item</h1>
+
+<form asp-action="Create" method="post">
+    <div class="form-group">
+        <label asp-for="ProductId" class="control-label">Product</label>
+        <select asp-for="ProductId" class="form-control" asp-items="ViewBag.ProductList">
+            <option value="">Select a Product</option>
+        </select>
+        <span asp-validation-for="ProductId" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Quantity" class="control-label">Quantity</label>
+        <input asp-for="Quantity" class="form-control" />
+        <span asp-validation-for="Quantity" class="text-danger"></span>
+    </div>
+    <div class="form-group">
+        <label asp-for="Location" class="control-label">Location</label>
+        <input asp-for="Location" class="form-control" />
+        <span asp-validation-for="Location" class="text-danger"></span>
+    </div>
+    <button type="submit" class="btn btn-primary">Save</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>

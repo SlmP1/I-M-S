@@ -1,6 +1,7 @@
 ﻿using IMS.Data;
 using IMS.Models;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 
 namespace IMS.Controllers
@@ -17,73 +18,74 @@ namespace IMS.Controllers
 
         // GET: Inventory
         public async Task<IActionResult> Index()
-        { 
-            var inventories = await _context.Inventories.ToListAsync();
+        {
+            var inventories = await _context.Inventories
+           .Include(i => i.Product)  
+           .ToListAsync();
             return View(inventories);
         }
 
-        // GET: Inventory/Details/5
-        public async Task<IActionResult> Details(int? id)
+        public IActionResult Create()
+        {
+            // Fetch the products from the database
+            var products = _context.Products
+                .Select(p => new { p.ProductId, p.ProductName })
+                .ToList();
+
+            // Populate the dropdown with product names and IDs
+            ViewBag.ProductList = new SelectList(products, "ProductId", "ProductName");
+
+            return View();
+        }
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public IActionResult Create(Inventory inventory)
+        {
+            if (ModelState.IsValid)
+            {
+                _context.Inventories.Add(inventory);
+                _context.SaveChanges();
+                return RedirectToAction(nameof(Index));
+            }
+
+            // Re-populate the dropdown in case of validation errors
+            var products = _context.Products
+                .Select(p => new { p.ProductId, p.ProductName })
+                .ToList();
+            ViewBag.ProductList = new SelectList(products, "ProductId", "ProductName");
+
+            return View(inventory);
+        }
+
+
+        // GET: Inventory/Update/5
+        public IActionResult Update(int? id)
         {
             if (id == null)
             {
                 return NotFound();
             }
 
-            var inventory = await _context.Inventories
-                .FirstOrDefaultAsync(m => m.Id == id);
+            var inventory = _context.Inventories.Find(id);
             if (inventory == null)
             {
                 return NotFound();
             }
 
+            // Populate the dropdown with product names and IDs
+            var products = _context.Products
+                .Select(p => new { p.ProductId, p.ProductName })
+                .ToList();
+            ViewBag.ProductList = new SelectList(products, "ProductId", "ProductName", inventory.ProductId);
+
             return View(inventory);
         }
-
-        // GET: Inventory/Create
-        public IActionResult Create()
-        {
-            return View();
-        }
-
-        // POST: Inventory/Create
-        [HttpPost]
-        [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,Quantity,Price")] Inventory inventory)
-        {
-            if (ModelState.IsValid)
-            {
-                _context.Add(inventory);
-                await _context.SaveChangesAsync();
-                return RedirectToAction(nameof(Index));
-            }
-            return View(inventory);
-        }
-
-        [HttpGet]
-        public IActionResult Update(int id)
-        {
-            var inventoryItem = _context.Inventories
-                .Where(i => i.Id == id)
-                .Include(i => i.Product) // Ensure that the related Product is loaded
-                .FirstOrDefault();
-
-            if (inventoryItem == null)
-            {
-                return NotFound();
-            }
-
-            // Get all products to display in the dropdown
-            ViewBag.Products = _context.Products.ToList();
-
-            return View(inventoryItem);
-        }
-
 
         // POST: Inventory/Update/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int id, [Bind("Id,Name,Quantity,Price")] Inventory inventory)
+        public IActionResult Update(int id, Inventory inventory)
         {
             if (id != inventory.Id)
             {
@@ -95,11 +97,12 @@ namespace IMS.Controllers
                 try
                 {
                     _context.Update(inventory);
-                    await _context.SaveChangesAsync();
+                    _context.SaveChanges();
+                    return RedirectToAction(nameof(Index));
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!InventoryExists(inventory.Id))
+                    if (!_context.Inventories.Any(e => e.Id == inventory.Id))
                     {
                         return NotFound();
                     }
@@ -108,10 +111,17 @@ namespace IMS.Controllers
                         throw;
                     }
                 }
-                return RedirectToAction(nameof(Index));
             }
+
+            // Re-populate the dropdown in case of validation errors
+            var products = _context.Products
+                .Select(p => new { p.ProductId, p.ProductName })
+                .ToList();
+            ViewBag.ProductList = new SelectList(products, "ProductId", "ProductName", inventory.ProductId);
+
             return View(inventory);
         }
+
 
         // GET: Inventory/Delete/5
         public async Task<IActionResult> Delete(int? id)
@@ -132,7 +142,7 @@ namespace IMS.Controllers
         }
 
         // POST: Inventory/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
