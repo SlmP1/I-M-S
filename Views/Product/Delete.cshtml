@@ -10,11 +10,11 @@
     <h4>Product: @Model.ProductName</h4>
     <p><strong>Price:</strong> @Model.Price</p>
     <p><strong>Category:</strong> @Model.Category</p>
-    <p><strong>Supplier:</strong> @Model.Supplier?.SupplierName</p> <!-- Make sure Supplier is loaded -->
+    <p><strong>Supplier:</strong> @Model.Supplier?.SupplierName</p> 
 </div>
 
 <form asp-action="DeleteConfirmed" method="post">
-    <input type="hidden" asp-for="ProductId" />
+    <input type="hidden" name="id" value="@Model.ProductId" />
     <button type="submit" class="btn btn-danger">Delete</button>
     <a asp-action="Index" class="btn btn-secondary">Cancel</a>
 </form>

@@ -20,7 +20,7 @@ namespace IMS.Controllers
         // GET: Products
         public async Task<IActionResult> Index()
         {
-            Console.WriteLine("rame");
+
             var products = await _context.Products.Include(p => p.Supplier).ToListAsync();
             return View(products);
         }
@@ -127,14 +127,17 @@ namespace IMS.Controllers
         }
 
         // POST: Products/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
-            
-            
+
+
             var product = await _context.Products.FindAsync(id);
-            Console.WriteLine(product);
+
+        
+       
+
             if (product != null)
             {
                 _context.Products.Remove(product);

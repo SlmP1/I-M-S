@@ -278,3 +278,4 @@ C:\Users\Giorgio_Calabria\source\repos\IMS\bin\Debug\net8.0\zh-Hans\Microsoft.Co
 C:\Users\Giorgio_Calabria\source\repos\IMS\bin\Debug\net8.0\zh-Hant\Microsoft.CodeAnalysis.Scripting.resources.dll
 C:\Users\Giorgio_Calabria\source\repos\IMS\obj\Debug\net8.0\staticwebassets.upToDateCheck.txt
 C:\Users\Giorgio_Calabria\source\repos\IMS\obj\Debug\net8.0\scopedcss\Views\Shared\_Layout.cshtml.rz.scp.css
+C:\Users\Giorgio_Calabria\source\repos\IMS\obj\Debug\net8.0\IMS.sourcelink.json
