@@ -48,7 +48,7 @@ namespace InAndOut.Controllers
         // POST: Supplier/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,Name,ContactInfo")] Supplier supplier)
+        public async Task<IActionResult> Create([Bind("SupplierId,SupplierName,ContactInfo,Address")] Supplier supplier)
         {
             if (ModelState.IsValid)
             {
@@ -78,7 +78,7 @@ namespace InAndOut.Controllers
         // POST: Supplier/Edit/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int id, [Bind("Id,Name,ContactInfo")] Supplier supplier)
+        public async Task<IActionResult> Update(int id, [Bind("SupplierId,SupplierName,ContactInfo,Address")] Supplier supplier)
         {
             if (id != supplier.SupplierId)
             {
@@ -108,6 +108,8 @@ namespace InAndOut.Controllers
             return View(supplier);
         }
 
+        // Controller for Supplier
+
         // GET: Supplier/Delete/5
         public async Task<IActionResult> Delete(int? id)
         {
@@ -132,10 +134,14 @@ namespace InAndOut.Controllers
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
             var supplier = await _context.Suppliers.FindAsync(id);
-            _context.Suppliers.Remove(supplier);
-            await _context.SaveChangesAsync();
+            if (supplier != null)
+            {
+                _context.Suppliers.Remove(supplier);
+                await _context.SaveChangesAsync();
+            }
             return RedirectToAction(nameof(Index));
         }
+
 
         private bool SupplierExists(int id)
         {

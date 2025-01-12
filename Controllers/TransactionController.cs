@@ -2,6 +2,7 @@
 using Microsoft.EntityFrameworkCore;
 using IMS.Data;
 using IMS.Models;
+using Microsoft.AspNetCore.Mvc.Rendering;
 
 namespace InAndOut.Controllers
 {
@@ -42,13 +43,14 @@ namespace InAndOut.Controllers
         // GET: Transaction/Create
         public IActionResult Create()
         {
+            ViewBag.ProductList = new SelectList(_context.Products, "ProductId", "ProductName");
             return View();
         }
 
         // POST: Transaction/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProductId,SupplierId,Date,Amount")] Transaction transaction)
+        public async Task<IActionResult> Create([Bind("Id,ProductId,SupplierId,TransactionType,TransactionDate,Location")] Transaction transaction)
         {
             if (ModelState.IsValid)
             {
@@ -56,10 +58,12 @@ namespace InAndOut.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
+
+            // Populate ProductList in case of validation failure
+            ViewBag.ProductList = new SelectList(_context.Products, "ProductId", "ProductName", transaction.ProductId);
             return View(transaction);
         }
 
-        // GET: Transaction/Edit/5
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null)
@@ -72,13 +76,16 @@ namespace InAndOut.Controllers
             {
                 return NotFound();
             }
+
+            // Populate the dropdown with product names
+            ViewBag.ProductList = new SelectList(_context.Products, "ProductId", "ProductName", transaction.ProductId);
             return View(transaction);
         }
 
-        // POST: Transaction/Edit/5
+        // POST: Transaction/Update/5
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Update(int id, [Bind("Id,ProductId,SupplierId,Date,Amount")] Transaction transaction)
+        public async Task<IActionResult> Update(int id, [Bind("TransactionId,ProductId,Quantity,TransactionType,TransactionDate,Location")] Transaction transaction)
         {
             if (id != transaction.TransactionId)
             {
@@ -105,6 +112,9 @@ namespace InAndOut.Controllers
                 }
                 return RedirectToAction(nameof(Index));
             }
+
+           
+            ViewBag.ProductList = new SelectList(_context.Products, "ProductId", "ProductName", transaction.ProductId);
             return View(transaction);
         }
 
