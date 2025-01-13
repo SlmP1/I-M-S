@@ -130,9 +130,11 @@ namespace IMS.Controllers
             {
                 return NotFound();
             }
+            
 
             var inventory = await _context.Inventories
                 .FirstOrDefaultAsync(m => m.Id == id);
+
             if (inventory == null)
             {
                 return NotFound();
@@ -153,6 +155,10 @@ namespace IMS.Controllers
             {
                 _context.Inventories.Remove(inventory);
                 await _context.SaveChangesAsync();
+            }
+            if (inventory.ProductId != null)
+            {
+
             }
             return RedirectToAction("Index", "Inventory");
         }

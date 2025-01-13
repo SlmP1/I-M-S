@@ -7,10 +7,10 @@
 <h2>Update Transaction</h2>
 
 <form asp-action="Update" method="post">
-    <input type="hidden" asp-for="TransactionId" />
+    @Html.HiddenFor(model => model.TransactionId)
 
     <div class="form-group">
-        <label asp-for="ProductId" class="control-label"></label>
+        <label asp-for="ProductId" class="control-label">Product</label>
         <select asp-for="ProductId" class="form-control" asp-items="ViewBag.ProductList">
             <option value="">Select a Product</option>
         </select>
@@ -18,13 +18,13 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="Quantity" class="control-label"></label>
+        <label asp-for="Quantity" class="control-label">Quantity</label>
         <input asp-for="Quantity" type="number" class="form-control" />
         <span asp-validation-for="Quantity" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="TransactionType" class="control-label"></label>
+        <label asp-for="TransactionType" class="control-label">Transaction Type</label>
         <select asp-for="TransactionType" class="form-control">
             <option value="">Select Transaction Type</option>
             <option value="Purchase">Purchase</option>
@@ -34,13 +34,13 @@
     </div>
 
     <div class="form-group">
-        <label asp-for="TransactionDate" class="control-label"></label>
+        <label asp-for="TransactionDate" class="control-label">Transaction Date</label>
         <input asp-for="TransactionDate" type="datetime-local" class="form-control" />
         <span asp-validation-for="TransactionDate" class="text-danger"></span>
     </div>
 
     <div class="form-group">
-        <label asp-for="Location" class="control-label"></label>
+        <label asp-for="Location" class="control-label">Location</label>
         <input asp-for="Location" class="form-control" />
         <span asp-validation-for="Location" class="text-danger"></span>
     </div>

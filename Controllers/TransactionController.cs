@@ -1,10 +1,10 @@
 ﻿using Microsoft.AspNetCore.Mvc;
+using Microsoft.AspNetCore.Mvc.Rendering;
 using Microsoft.EntityFrameworkCore;
 using IMS.Data;
 using IMS.Models;
-using Microsoft.AspNetCore.Mvc.Rendering;
 
-namespace InAndOut.Controllers
+namespace IMS.Controllers
 {
     public class TransactionController : Controller
     {
@@ -18,26 +18,10 @@ namespace InAndOut.Controllers
         // GET: Transaction
         public async Task<IActionResult> Index()
         {
-            var transactions = await _context.Transactions.ToListAsync();
+            var transactions = await _context.Transactions
+                .Include(t => t.Product)
+                .ToListAsync();
             return View(transactions);
-        }
-
-        // GET: Transaction/Details/5
-        public async Task<IActionResult> Details(int? id)
-        {
-            if (id == null)
-            {
-                return NotFound();
-            }
-
-            var transaction = await _context.Transactions
-                .FirstOrDefaultAsync(m => m.TransactionId == id);
-            if (transaction == null)
-            {
-                return NotFound();
-            }
-
-            return View(transaction);
         }
 
         // GET: Transaction/Create
@@ -50,7 +34,7 @@ namespace InAndOut.Controllers
         // POST: Transaction/Create
         [HttpPost]
         [ValidateAntiForgeryToken]
-        public async Task<IActionResult> Create([Bind("Id,ProductId,SupplierId,TransactionType,TransactionDate,Location")] Transaction transaction)
+        public async Task<IActionResult> Create([Bind("TransactionId,ProductId,Quantity,TransactionType,TransactionDate,Location")] Transaction transaction)
         {
             if (ModelState.IsValid)
             {
@@ -58,12 +42,11 @@ namespace InAndOut.Controllers
                 await _context.SaveChangesAsync();
                 return RedirectToAction(nameof(Index));
             }
-
-            // Populate ProductList in case of validation failure
             ViewBag.ProductList = new SelectList(_context.Products, "ProductId", "ProductName", transaction.ProductId);
             return View(transaction);
         }
 
+        // GET: Transaction/Update/5
         public async Task<IActionResult> Update(int? id)
         {
             if (id == null)
@@ -77,7 +60,6 @@ namespace InAndOut.Controllers
                 return NotFound();
             }
 
-            // Populate the dropdown with product names
             ViewBag.ProductList = new SelectList(_context.Products, "ProductId", "ProductName", transaction.ProductId);
             return View(transaction);
         }
@@ -101,7 +83,7 @@ namespace InAndOut.Controllers
                 }
                 catch (DbUpdateConcurrencyException)
                 {
-                    if (!TransactionExists(transaction.TransactionId))
+                    if (!_context.Transactions.Any(e => e.TransactionId == id))
                     {
                         return NotFound();
                     }
@@ -113,7 +95,6 @@ namespace InAndOut.Controllers
                 return RedirectToAction(nameof(Index));
             }
 
-           
             ViewBag.ProductList = new SelectList(_context.Products, "ProductId", "ProductName", transaction.ProductId);
             return View(transaction);
         }
@@ -127,6 +108,7 @@ namespace InAndOut.Controllers
             }
 
             var transaction = await _context.Transactions
+                .Include(t => t.Product)
                 .FirstOrDefaultAsync(m => m.TransactionId == id);
             if (transaction == null)
             {
@@ -137,20 +119,16 @@ namespace InAndOut.Controllers
         }
 
         // POST: Transaction/Delete/5
-        [HttpPost, ActionName("Delete")]
+        [HttpPost, ActionName("DeleteConfirmed")]
         [ValidateAntiForgeryToken]
         public async Task<IActionResult> DeleteConfirmed(int id)
         {
+            Console.WriteLine("rame " + id);
             var transaction = await _context.Transactions.FindAsync(id);
+            Console.WriteLine("rame2 "+transaction);
             _context.Transactions.Remove(transaction);
             await _context.SaveChangesAsync();
             return RedirectToAction(nameof(Index));
         }
-
-        private bool TransactionExists(int id)
-        {
-            return _context.Transactions.Any(e => e.TransactionId == id);
-        }
     }
 }
-

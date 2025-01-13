@@ -1,0 +1,24 @@
+﻿@model IMS.Models.Transaction
+
+@{
+    ViewData["Title"] = "Delete Transaction";
+}
+
+<h2>Delete Transaction</h2>
+
+<h3>Are you sure you want to delete the following transaction?</h3>
+
+<div>
+    <h4>Transaction Details:</h4>
+    <p><strong>Product:</strong> @Model.Product?.ProductName</p>
+    <p><strong>Quantity:</strong> @Model.Quantity</p>
+    <p><strong>Transaction Type:</strong> @Model.TransactionType</p>
+    <p><strong>Transaction Date:</strong> @Model.TransactionDate?.ToString("g")</p>
+    <p><strong>Location:</strong> @Model.Location</p>
+</div>
+
+<form asp-action="DeleteConfirmed" method="post">
+    <input type="hidden" name="id" value="@Model.TransactionId" />
+    <button type="submit" class="btn btn-danger">Delete</button>
+    <a asp-action="Index" class="btn btn-secondary">Cancel</a>
+</form>
