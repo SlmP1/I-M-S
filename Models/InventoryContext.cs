@@ -44,6 +44,7 @@ namespace IMS.Models
                 entity.HasOne(d => d.Product)
                     .WithMany(p => p.Inventories)
                     .HasForeignKey(d => d.ProductId)
+                    .OnDelete(DeleteBehavior.Restrict)
                     .HasConstraintName("FK__Inventory__Produ__44FF419A");
             });
 
@@ -61,12 +62,14 @@ namespace IMS.Models
                 entity.HasOne(d => d.Supplier)
                     .WithMany(p => p.Products)
                     .HasForeignKey(d => d.SupplierId)
+                    .OnDelete(DeleteBehavior.Restrict)
                     .HasConstraintName("FK__Products__Suppli__4222D4EF");
             });
 
             // Configuring Supplier entity
             modelBuilder.Entity<Supplier>(entity =>
             {
+
                 entity.HasKey(e => e.SupplierId).HasName("PK__Supplier__4BE66694B464378C");
 
                 entity.Property(e => e.SupplierId).HasColumnName("SupplierID");

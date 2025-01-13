@@ -3,12 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\views\\inventory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
-      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:views\\inventory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
+      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\models\\inventorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:models\\inventorycontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:data\\applicationdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:controllers\\inventorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\views\\inventory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
+      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:views\\inventory\\delete.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\controllers\\homecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -79,10 +95,6 @@
       "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:views\\supplier\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:models\\product.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\views\\supplier\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:views\\supplier\\index.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
     },
@@ -113,10 +125,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\views\\inventory\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}",
       "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:views\\inventory\\update.cshtml||{40D31677-CBC0-4297-A9EF-89D907823A98}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|c:\\users\\giorgio_calabria\\source\\repos\\ims\\models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{A0A49D04-436A-4289-9946-CBCEEB78D005}|IMS.csproj|solutionrelative:models\\inventory.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -126,7 +134,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 3,
           "Children": [
             {
               "$type": "Bookmark",
@@ -138,33 +146,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Transaction\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Transaction\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Transaction\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Transaction\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-13T14:56:37.618Z",
+              "DocumentIndex": 1,
+              "Title": "ApplicationDbContext.cs",
+              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Data\\ApplicationDbContext.cs",
+              "RelativeDocumentMoniker": "Data\\ApplicationDbContext.cs",
+              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Data\\ApplicationDbContext.cs",
+              "RelativeToolTip": "Data\\ApplicationDbContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:19:26.847Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 5,
-              "Title": "Delete.cshtml",
-              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Delete.cshtml",
-              "RelativeDocumentMoniker": "Views\\Supplier\\Delete.cshtml",
-              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Delete.cshtml",
-              "RelativeToolTip": "Views\\Supplier\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-12T18:12:22.86Z",
+              "DocumentIndex": 0,
+              "Title": "InventoryContext.cs",
+              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\InventoryContext.cs",
+              "RelativeDocumentMoniker": "Models\\InventoryContext.cs",
+              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\InventoryContext.cs",
+              "RelativeToolTip": "Models\\InventoryContext.cs",
+              "ViewState": "AgIAAFQAAAAAAAAAAADwv2AAAAAPAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-13T18:14:55.121Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 8,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Product\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Delete.cshtml",
@@ -177,20 +185,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 5,
               "Title": "Delete.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Inventory\\Delete.cshtml",
               "RelativeDocumentMoniker": "Views\\Inventory\\Delete.cshtml",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Inventory\\Delete.cshtml",
               "RelativeToolTip": "Views\\Inventory\\Delete.cshtml",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAAGAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAIBJwBsAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-11T16:06:51.641Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 6,
               "Title": "HomeController.cs",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Controllers\\HomeController.cs",
               "RelativeDocumentMoniker": "Controllers\\HomeController.cs",
@@ -203,20 +211,76 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 3,
+              "Title": "Product.cs",
+              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Product.cs",
+              "RelativeDocumentMoniker": "Models\\Product.cs",
+              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Product.cs",
+              "RelativeToolTip": "Models\\Product.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABcAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T12:37:11.514Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "InventoryController.cs",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Controllers\\InventoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\InventoryController.cs",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Controllers\\InventoryController.cs",
               "RelativeToolTip": "Controllers\\InventoryController.cs",
-              "ViewState": "AgIAAJoAAAAAAAAAAAAkwIgAAAAiAAAAAAAAAA==",
+              "ViewState": "AgIAACUAAAAAAAAAAAAUwDcAAABXAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-09T19:28:43.108Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 6,
+              "DocumentIndex": 9,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Supplier\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Supplier\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABYAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-12T18:12:22.86Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "Delete.cshtml",
+              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Transaction\\Delete.cshtml",
+              "RelativeDocumentMoniker": "Views\\Transaction\\Delete.cshtml",
+              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Transaction\\Delete.cshtml",
+              "RelativeToolTip": "Views\\Transaction\\Delete.cshtml",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABQAAAA8AAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
+              "WhenOpened": "2025-01-13T14:56:37.618Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "Inventory.cs",
+              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Inventory.cs",
+              "RelativeDocumentMoniker": "Models\\Inventory.cs",
+              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Inventory.cs",
+              "RelativeToolTip": "Models\\Inventory.cs",
+              "ViewState": "AgIAAAkAAAAAAAAAAAA5wBgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-01-09T18:55:33.428Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
               "Title": "Transaction.cs",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Transaction.cs",
               "RelativeDocumentMoniker": "Models\\Transaction.cs",
@@ -229,7 +293,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 7,
+              "DocumentIndex": 11,
               "Title": "TransactionController.cs",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Controllers\\TransactionController.cs",
               "RelativeDocumentMoniker": "Controllers\\TransactionController.cs",
@@ -242,7 +306,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 8,
+              "DocumentIndex": 12,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Transaction\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\Index.cshtml",
@@ -254,12 +318,8 @@
               "EditorCaption": ""
             },
             {
-              "$type": "Bookmark",
-              "Name": "ST:0:0:{d78612c7-9962-4b83-95d9-268046dad23a}"
-            },
-            {
               "$type": "Document",
-              "DocumentIndex": 9,
+              "DocumentIndex": 13,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Transaction\\Update.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\Update.cshtml",
@@ -272,7 +332,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 10,
+              "DocumentIndex": 14,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Transaction\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Transaction\\Create.cshtml",
@@ -285,20 +345,20 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 11,
+              "DocumentIndex": 15,
               "Title": "ProductController.cs",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Controllers\\ProductController.cs",
               "RelativeDocumentMoniker": "Controllers\\ProductController.cs",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Controllers\\ProductController.cs",
               "RelativeToolTip": "Controllers\\ProductController.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAywCcAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAABUAAAAAAAAAAADwvycAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-01-08T12:37:48.931Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 12,
+              "DocumentIndex": 16,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Product\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Create.cshtml",
@@ -311,33 +371,33 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 13,
+              "DocumentIndex": 17,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Product\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Index.cshtml",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Product\\Index.cshtml",
               "RelativeToolTip": "Views\\Product\\Index.cshtml",
-              "ViewState": "AgIAABUAAAAAAAAAAAAAAAcAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAABIAAAAAAAAAAIBJwAcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-09T18:59:33.55Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 14,
+              "DocumentIndex": 18,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Product\\Update.cshtml",
               "RelativeDocumentMoniker": "Views\\Product\\Update.cshtml",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Product\\Update.cshtml",
               "RelativeToolTip": "Views\\Product\\Update.cshtml",
-              "ViewState": "AgIAAA8AAAAAAAAAAAAAABwAAAAjAAAAAAAAAA==",
+              "ViewState": "AgIAAAwAAAAAAAAAAIBJwBwAAAAjAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
               "WhenOpened": "2025-01-10T17:36:57.66Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 17,
+              "DocumentIndex": 21,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Inventory\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Inventory\\Create.cshtml",
@@ -345,11 +405,12 @@
               "RelativeToolTip": "Views\\Inventory\\Create.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T18:07:21.119Z"
+              "WhenOpened": "2025-01-11T18:07:21.119Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 15,
+              "DocumentIndex": 19,
               "Title": "SupplierController.cs",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Controllers\\SupplierController.cs",
               "RelativeDocumentMoniker": "Controllers\\SupplierController.cs",
@@ -357,11 +418,12 @@
               "RelativeToolTip": "Controllers\\SupplierController.cs",
               "ViewState": "AgIAAIEAAAAAAAAAAAAuwJcAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:45:37.488Z"
+              "WhenOpened": "2025-01-09T18:45:37.488Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 16,
+              "DocumentIndex": 20,
               "Title": "Supplier.cs",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Supplier.cs",
               "RelativeDocumentMoniker": "Models\\Supplier.cs",
@@ -369,35 +431,25 @@
               "RelativeToolTip": "Models\\Supplier.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAABEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:49:21.584Z"
+              "WhenOpened": "2025-01-09T18:49:21.584Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 18,
+              "DocumentIndex": 22,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Update.cshtml",
               "RelativeDocumentMoniker": "Views\\Supplier\\Update.cshtml",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Update.cshtml",
               "RelativeToolTip": "Views\\Supplier\\Update.cshtml",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAAABsAAAAHAAAAAAAAAA==",
+              "ViewState": "AgIAAAMAAAAAAAAAAIBJwBsAAAAHAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T18:46:51.481Z"
+              "WhenOpened": "2025-01-09T18:46:51.481Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 19,
-              "Title": "Product.cs",
-              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Product.cs",
-              "RelativeDocumentMoniker": "Models\\Product.cs",
-              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Product.cs",
-              "RelativeToolTip": "Models\\Product.cs",
-              "ViewState": "AgIAAAYAAAAAAAAAAAAIwBcAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T12:37:11.514Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 20,
+              "DocumentIndex": 23,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Supplier\\Index.cshtml",
@@ -405,23 +457,25 @@
               "RelativeToolTip": "Views\\Supplier\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T18:59:23.517Z"
+              "WhenOpened": "2025-01-09T18:59:23.517Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 21,
+              "DocumentIndex": 24,
               "Title": "Create.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Create.cshtml",
               "RelativeDocumentMoniker": "Views\\Supplier\\Create.cshtml",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Supplier\\Create.cshtml",
               "RelativeToolTip": "Views\\Supplier\\Create.cshtml",
-              "ViewState": "AgIAAAwAAAAAAAAAAAAAABwAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAkAAAAAAAAAAIBJwBwAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T18:50:31.716Z"
+              "WhenOpened": "2025-01-09T18:50:31.716Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 22,
+              "DocumentIndex": 25,
               "Title": "_ValidationScriptsPartial.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
@@ -429,11 +483,12 @@
               "RelativeToolTip": "Views\\Shared\\_ValidationScriptsPartial.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAIAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T19:22:04.227Z"
+              "WhenOpened": "2025-01-09T19:22:04.227Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 23,
+              "DocumentIndex": 26,
               "Title": "_Layout.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Shared\\_Layout.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml",
@@ -441,23 +496,25 @@
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAD0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T19:03:12.679Z"
+              "WhenOpened": "2025-01-09T19:03:12.679Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 24,
+              "DocumentIndex": 27,
               "Title": "_Layout.cshtml.css",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeDocumentMoniker": "Views\\Shared\\_Layout.cshtml.css",
               "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Shared\\_Layout.cshtml.css",
               "RelativeToolTip": "Views\\Shared\\_Layout.cshtml.css",
-              "ViewState": "AgIAAD8AAAAAAAAAAAAAAFYAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAADwAAAAAAAAAAIBJwFYAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003000|",
-              "WhenOpened": "2025-01-09T19:08:26.177Z"
+              "WhenOpened": "2025-01-09T19:08:26.177Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 25,
+              "DocumentIndex": 28,
               "Title": "Error.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Shared\\Error.cshtml",
               "RelativeDocumentMoniker": "Views\\Shared\\Error.cshtml",
@@ -465,11 +522,12 @@
               "RelativeToolTip": "Views\\Shared\\Error.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-11T16:38:35.333Z"
+              "WhenOpened": "2025-01-11T16:38:35.333Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 26,
+              "DocumentIndex": 29,
               "Title": "Index.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Inventory\\Index.cshtml",
               "RelativeDocumentMoniker": "Views\\Inventory\\Index.cshtml",
@@ -477,11 +535,12 @@
               "RelativeToolTip": "Views\\Inventory\\Index.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAkAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T18:54:31.287Z"
+              "WhenOpened": "2025-01-09T18:54:31.287Z",
+              "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 27,
+              "DocumentIndex": 30,
               "Title": "Update.cshtml",
               "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Views\\Inventory\\Update.cshtml",
               "RelativeDocumentMoniker": "Views\\Inventory\\Update.cshtml",
@@ -489,19 +548,8 @@
               "RelativeToolTip": "Views\\Inventory\\Update.cshtml",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000759|",
-              "WhenOpened": "2025-01-09T19:22:49.439Z"
-            },
-            {
-              "$type": "Document",
-              "DocumentIndex": 28,
-              "Title": "Inventory.cs",
-              "DocumentMoniker": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Inventory.cs",
-              "RelativeDocumentMoniker": "Models\\Inventory.cs",
-              "ToolTip": "C:\\Users\\Giorgio_Calabria\\source\\repos\\IMS\\Models\\Inventory.cs",
-              "RelativeToolTip": "Models\\Inventory.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAABgAAAAAAAAAAAAAAA==",
-              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2025-01-09T18:55:33.428Z"
+              "WhenOpened": "2025-01-09T19:22:49.439Z",
+              "EditorCaption": ""
             }
           ]
         }
